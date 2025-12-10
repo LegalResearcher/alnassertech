@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
+import Logo from "./Logo";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,16 +47,14 @@ const Header = () => {
               e.preventDefault();
               scrollToSection("#");
             }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-black text-lg">ن</span>
-            </div>
+            <Logo isScrolled={isScrolled} className="group-hover:scale-110 transition-transform duration-300" />
             <div className="hidden sm:block">
-              <span className={`font-bold text-lg ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
+              <span className={`font-bold text-lg transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
                 الناصر تِك
               </span>
-              <span className={`block text-xs ${isScrolled ? "text-muted-foreground" : "text-muted-foreground"}`}>
+              <span className={`block text-xs transition-colors duration-300 ${isScrolled ? "text-muted-foreground" : "text-primary-foreground/70"}`}>
                 للحلول الرقمية
               </span>
             </div>
