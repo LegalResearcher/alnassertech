@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo & Copyright */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-black text-sm">ن</span>
+              <span className="text-primary-foreground font-black text-sm">N</span>
             </div>
             <span className="text-muted-foreground text-sm">
               © {currentYear} الناصر تِك للحلول الرقمية. جميع الحقوق محفوظة.
