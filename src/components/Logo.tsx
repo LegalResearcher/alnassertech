@@ -47,28 +47,18 @@ const Logo = ({ isScrolled = false, className = "" }: LogoProps) => {
         strokeLinejoin="round"
       />
       
-      {/* Arabic letter ن (Noon) - stylized */}
+      {/* Letter N - stylized */}
       <text
         x="24"
-        y="29"
+        y="28"
         textAnchor="middle"
-        className={`text-[16px] font-bold transition-all duration-300 ${
+        className={`text-[18px] font-black transition-all duration-300 ${
           isScrolled ? "fill-primary" : "fill-primary-foreground"
         }`}
-        style={{ fontFamily: 'Cairo, sans-serif' }}
+        style={{ fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '-0.5px' }}
       >
-        ن
+        N
       </text>
-      
-      {/* Dot accent above */}
-      <circle
-        cx="24"
-        cy="15"
-        r="2"
-        className={`transition-all duration-300 ${
-          isScrolled ? "fill-primary" : "fill-primary-foreground"
-        }`}
-      />
     </svg>
   );
 };
