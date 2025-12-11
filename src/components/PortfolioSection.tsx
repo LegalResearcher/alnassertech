@@ -1,5 +1,12 @@
-import { ExternalLink, Code2 } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+import ecommerceImg from "@/assets/portfolio/ecommerce-store.jpg";
+import consultingImg from "@/assets/portfolio/consulting-website.jpg";
+import landingImg from "@/assets/portfolio/landing-page.jpg";
+import educationalImg from "@/assets/portfolio/educational-platform.jpg";
+import newsImg from "@/assets/portfolio/news-portal.jpg";
+import bookingImg from "@/assets/portfolio/booking-system.jpg";
 
 const projects = [
   {
@@ -7,7 +14,7 @@ const projects = [
     category: "متاجر إلكترونية",
     description: "متجر إلكتروني احترافي مع نظام دفع متكامل وإدارة مخزون ذكية",
     tech: ["React", "TypeScript", "Tailwind"],
-    gradient: "from-emerald-500/20 to-teal-500/20",
+    image: ecommerceImg,
     borderColor: "border-emerald-500/30",
   },
   {
@@ -15,7 +22,7 @@ const projects = [
     category: "مواقع الشركات",
     description: "موقع عصري لشركة استشارات مالية مع تصميم راقي وأداء فائق",
     tech: ["React", "Vite", "Framer Motion"],
-    gradient: "from-blue-500/20 to-indigo-500/20",
+    image: consultingImg,
     borderColor: "border-blue-500/30",
   },
   {
@@ -23,7 +30,7 @@ const projects = [
     category: "صفحات الهبوط",
     description: "صفحة هبوط عالية التحويل لحملة تسويقية ناجحة",
     tech: ["React", "TypeScript", "SEO"],
-    gradient: "from-purple-500/20 to-pink-500/20",
+    image: landingImg,
     borderColor: "border-purple-500/30",
   },
   {
@@ -31,7 +38,7 @@ const projects = [
     category: "تطبيقات ويب",
     description: "منصة تعليمية تفاعلية مع نظام إدارة محتوى متقدم",
     tech: ["React", "Node.js", "MongoDB"],
-    gradient: "from-amber-500/20 to-orange-500/20",
+    image: educationalImg,
     borderColor: "border-amber-500/30",
   },
   {
@@ -39,7 +46,7 @@ const projects = [
     category: "مواقع المحتوى",
     description: "بوابة إخبارية سريعة مع تصنيفات متعددة وتجربة قراءة مميزة",
     tech: ["React", "CMS", "SEO"],
-    gradient: "from-rose-500/20 to-red-500/20",
+    image: newsImg,
     borderColor: "border-rose-500/30",
   },
   {
@@ -47,7 +54,7 @@ const projects = [
     category: "تطبيقات ويب",
     description: "نظام حجوزات متكامل لعيادة طبية مع إشعارات وتقويم ذكي",
     tech: ["React", "TypeScript", "API"],
-    gradient: "from-cyan-500/20 to-sky-500/20",
+    image: bookingImg,
     borderColor: "border-cyan-500/30",
   },
 ];
@@ -83,11 +90,13 @@ const PortfolioSection = () => {
               className={`group relative rounded-2xl bg-card border ${project.borderColor} overflow-hidden card-elevated`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Project Image Placeholder */}
-              <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Code2 className="w-16 h-16 text-foreground/20" />
-                </div>
+              {/* Project Image */}
+              <div className="h-48 relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button
