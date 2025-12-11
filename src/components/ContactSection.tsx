@@ -1,10 +1,11 @@
-import { MapPin, Phone, MessageCircle } from "lucide-react";
+import { MapPin, Phone, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
   const whatsappNumber = "967772762090";
   const whatsappMessage = encodeURIComponent("مرحباً، أرغب في الاستفسار عن خدماتكم");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const email = "moieen900@gmail.com";
 
   return (
     <section id="contact" className="py-24 hero-gradient relative overflow-hidden">
@@ -32,7 +33,7 @@ const ContactSection = () => {
 
         {/* Contact Cards */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {/* Location Card */}
             <div className="p-8 rounded-2xl bg-card/10 backdrop-blur-sm border border-border/20">
               <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
@@ -49,6 +50,17 @@ const ContactSection = () => {
               </div>
               <h3 className="text-xl font-bold text-primary-foreground mb-2">اتصل بنا</h3>
               <p className="text-muted-foreground" dir="ltr">+967 772 762 090</p>
+            </div>
+
+            {/* Email Card */}
+            <div className="p-8 rounded-2xl bg-card/10 backdrop-blur-sm border border-border/20">
+              <div className="w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
+                <Mail className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-primary-foreground mb-2">البريد الإلكتروني</h3>
+              <a href={`mailto:${email}`} className="text-muted-foreground hover:text-primary transition-colors">
+                {email}
+              </a>
             </div>
           </div>
 
