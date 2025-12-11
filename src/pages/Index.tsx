@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -18,6 +19,7 @@ const Index = () => {
         <WhyUsSection />
         <ServicesSection />
         <TestimonialsSection />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />
