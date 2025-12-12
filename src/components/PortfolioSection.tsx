@@ -17,7 +17,7 @@ const projects = [
     tech: ["React", "TypeScript", "Vite"],
     image: hakimImg,
     borderColor: "border-amber-500/30",
-    link: "https://hakim-alsharabi.lovable.app/",
+    link: "https://hakim-alsharabi.vercel.app/",
   },
   {
     title: "متجر إلكتروني متكامل",
