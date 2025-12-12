@@ -7,8 +7,18 @@ import landingImg from "@/assets/portfolio/landing-page.jpg";
 import educationalImg from "@/assets/portfolio/educational-platform.jpg";
 import newsImg from "@/assets/portfolio/news-portal.jpg";
 import bookingImg from "@/assets/portfolio/booking-system.jpg";
+import hakimImg from "@/assets/portfolio/hakim-alsharabi.jpg";
 
 const projects = [
+  {
+    title: "الشرعبي للخدمات القانونية",
+    category: "مواقع مؤسسية",
+    description: "منصة احترافية لمكتب محاماة واستشارات قانونية مع تصميم مؤسسي فاخر يعكس الثقة والمصداقية",
+    tech: ["React", "TypeScript", "Vite"],
+    image: hakimImg,
+    borderColor: "border-amber-500/30",
+    link: "https://hakim-alsharabi.lovable.app/",
+  },
   {
     title: "متجر إلكتروني متكامل",
     category: "متاجر إلكترونية",
@@ -99,14 +109,27 @@ const PortfolioSection = () => {
                 />
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button
-                    variant="secondary"
-                    size="sm"
-                    className="gap-2"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    عرض المشروع
-                  </Button>
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        className="gap-2"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        عرض المشروع
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="gap-2"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      عرض المشروع
+                    </Button>
+                  )}
                 </div>
               </div>
 
