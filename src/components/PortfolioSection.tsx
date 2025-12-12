@@ -8,6 +8,7 @@ import educationalImg from "@/assets/portfolio/educational-platform.jpg";
 import newsImg from "@/assets/portfolio/news-portal.jpg";
 import bookingImg from "@/assets/portfolio/booking-system.jpg";
 import hakimImg from "@/assets/portfolio/hakim-alsharabi.jpg";
+import hasadImg from "@/assets/portfolio/hasad-alyoum.jpg";
 
 const projects = [
   {
@@ -18,6 +19,15 @@ const projects = [
     image: hakimImg,
     borderColor: "border-amber-500/30",
     link: "https://hakim-alsharabi.vercel.app/",
+  },
+  {
+    title: "حصاد اليوم الإخباري",
+    category: "بوابات إخبارية",
+    description: "بوابة إخبارية عربية شاملة تقدم آخر الأخبار والتقارير بتصميم عصري وتجربة قراءة سلسة",
+    tech: ["React", "TypeScript", "Tailwind"],
+    image: hasadImg,
+    borderColor: "border-blue-500/30",
+    link: "https://hasadalyoum.com/",
   },
   {
     title: "متجر إلكتروني متكامل",
