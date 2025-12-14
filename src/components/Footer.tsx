@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-primary-foreground font-black text-sm">N</span>
             </div>
             <span className="text-muted-foreground text-sm">
-              © {currentYear} الناصر تِك للحلول الرقمية. جميع الحقوق محفوظة.
+              © {currentYear} الناصر تِك للحلول الرقمية (Alnasser Tech Digital Solutions). جميع الحقوق محفوظة.
             </span>
           </div>
 
