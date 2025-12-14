@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram } from "lucide-react";
+import { Facebook, Twitter, Instagram, Send } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,6 +7,7 @@ const Footer = () => {
     { icon: Facebook, href: "https://facebook.com", label: "فيسبوك" },
     { icon: Twitter, href: "https://x.com/Alnasr2024", label: "تويتر" },
     { icon: Instagram, href: "https://instagram.com", label: "انستغرام" },
+    { icon: Send, href: "https://t.me/+967772762090", label: "تليجرام" },
   ];
 
   return (
