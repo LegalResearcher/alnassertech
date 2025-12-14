@@ -5,7 +5,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: "https://facebook.com", label: "فيسبوك" },
-    { icon: Twitter, href: "https://twitter.com", label: "تويتر" },
+    { icon: Twitter, href: "https://x.com/Alnasr2024", label: "تويتر" },
     { icon: Instagram, href: "https://instagram.com", label: "انستغرام" },
   ];
 
