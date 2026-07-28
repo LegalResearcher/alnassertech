@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "ما التقنيات التي تستخدمونها في التطوير؟",
-    answer: "نستخدم أحدث تقنيات سيليكون فالي: React للواجهات التفاعلية، TypeScript للكود الموثوق، وTailwind CSS للتصميم المتجاوب. هذا يضمن سرعة فائقة وأداء استثنائي."
+    answer: "نستخدم React للواجهات التفاعلية، TypeScript للكود الموثوق، وTailwind CSS للتصميم المتجاوب — مجموعة أدوات حديثة ومستقرة، وليست تجربة جديدة على مشروعك."
   },
   {
     question: "هل المواقع متوافقة مع الجوال؟",
@@ -45,7 +45,7 @@ const FAQSection = () => {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             الأسئلة الشائعة
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-plex text-3xl md:text-4xl font-bold text-foreground mb-4">
             كل ما تحتاج معرفته
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
