@@ -3,6 +3,12 @@ import { Quote, Target, Rocket } from "lucide-react";
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-background relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary rounded-full blur-3xl" />
+      </div>
+      
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -10,11 +16,11 @@ const AboutSection = () => {
             <Target className="w-4 h-4" />
             من نحن
           </span>
-          <h2 className="font-plex text-4xl md:text-5xl font-bold text-foreground mb-4">
-            خلفية المؤسس
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            الرؤية والقيادة
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            طريق غير تقليدي إلى تطوير الويب
+            نعيد تعريف التفوق الرقمي بتقنيات المستقبل
           </p>
         </div>
 
@@ -32,7 +38,7 @@ const AboutSection = () => {
               </div>
               
               <div className="text-center md:text-right">
-                <h3 className="font-plex text-3xl font-bold text-foreground mb-2">
+                <h3 className="text-3xl font-bold text-foreground mb-2">
                   أ. معين الناصر
                 </h3>
                 <p className="text-primary font-semibold text-lg mb-1">
@@ -43,44 +49,54 @@ const AboutSection = () => {
                 </p>
               </div>
               
-              {/* Badge */}
+              {/* Decorative badge */}
               <div className="md:mr-auto flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
                 <Rocket className="w-5 h-5 text-primary" />
                 <span className="text-primary font-medium text-sm">الناصر تِك للحلول الرقمية</span>
               </div>
             </div>
 
-            {/* Bio */}
+            {/* Vision Statement */}
             <div className="relative">
               <Quote className="w-12 h-12 text-primary/20 absolute -top-2 -right-2" />
               
               <div className="bg-muted/50 rounded-2xl p-6 md:p-8 border border-border/50">
                 <h4 className="text-xl font-bold text-primary mb-6 flex items-center gap-2">
                   <span className="w-8 h-1 bg-primary rounded-full" />
-                  خلفية عملية، لا شهادة تسويقية
+                  إعادة تعريف التفوق الرقمي
                 </h4>
                 
                 <div className="space-y-4 text-foreground/90 leading-relaxed text-lg">
                   <p>
-                    أجمع بين خلفية في الدراسات القانونية والفقه الإسلامي، ومهارة تقنية اكتسبتها بالكامل عمليًا —
-                    ببناء منصات حقيقية وحل مشاكلها الفعلية، لا بشهادات أو دورات نظرية فقط.
+                    مهمتنا في الناصر تِك ليست مجرد تصميم موقع، بل هي بناء الجيل القادم من الأصول الرقمية. لقد ولّى زمن المواقع الثقيلة والقوالب المكررة.
                   </p>
                   
                   <p>
-                    الناصر تِك بدأت من حاجة فعلية: إدارة وتطوير منصات إخبارية عربية ومنصة تعليم قانوني بالكامل بنفسي.
-                    من هذا التكرار اليومي تشكّل أسلوب عملي: تعديلات دقيقة ومحدودة، وتحقّق من صحة كل تغيير قبل اعتماده.
+                    أنا أرى مستقبلاً حيث كل علامة تجارية، بغض النظر عن حجمها، تستحق أن تمتلك واجهة رقمية تعمل بكفاءة صاروخية وتتحدث لغة التصميم العالمي.
                   </p>
                   
                   <p>
-                    نبني بأدوات هندسية حديثة وموثوقة — واجهات سريعة، وقاعدة بيانات آمنة ومنظّمة، ونشر مستمر.
-                    وبعد التسليم نبقى مسؤولين عن المشروع، لا نكتفي بتسليم الملفات والانصراف.
+                    لهذا السبب، اتخذنا قراراً جريئاً: البناء من الصفر بالاعتماد كلياً على أحدث الأدوات الهندسية الحديثة.
+                    هذه الأدوات هي أساس القوة، السرعة، والموثوقية التي نقدمها لك بأسعار تبدأ من{" "}
+                    <span className="text-primary font-bold">150 دولارًا</span> فقط.
+                  </p>
+                  
+                  <p>
+                    نحن نؤمن بأن الجودة العالمية يجب أن تكون في متناول الجميع. رؤيتنا هي أن نكون الشريك التقني الذي ينقل مشاريع عملائنا من المحلية إلى العالمية، بأداء لا يمكن إيقافه وجمالية لا يمكن نسيانها.
+                  </p>
+                  
+                  <p className="text-foreground font-medium">
+                    انضم إلينا، ودعنا نحول رؤيتك إلى حقيقة تقنية فائقة.
                   </p>
                 </div>
                 
                 {/* Signature */}
                 <div className="mt-8 pt-6 border-t border-border/50 flex items-center justify-between">
+                  <p className="text-primary font-bold text-xl italic">
+                    "هذا وعدي لك."
+                  </p>
                   <div className="text-left">
-                    <p className="text-foreground font-semibold text-sm">معين الناصر</p>
+                    <p className="text-muted-foreground text-sm">معين الناصر</p>
                     <p className="text-xs text-muted-foreground/70">المؤسس</p>
                   </div>
                 </div>
