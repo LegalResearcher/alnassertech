@@ -72,10 +72,7 @@ const AboutSection = () => {
                   </p>
                   
                   <p>
-                    نبني بواجهات{" "}
-                    <span className="text-primary font-semibold">React</span> و
-                    <span className="text-primary font-semibold">TypeScript</span>، وقواعد بيانات{" "}
-                    <span className="text-primary font-semibold">Supabase</span>، وننشر عبر Vercel.
+                    نبني بأدوات هندسية حديثة وموثوقة — واجهات سريعة، وقاعدة بيانات آمنة ومنظّمة، ونشر مستمر.
                     وبعد التسليم نبقى مسؤولين عن المشروع، لا نكتفي بتسليم الملفات والانصراف.
                   </p>
                 </div>
