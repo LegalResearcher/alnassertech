@@ -27,7 +27,7 @@ const projects = [
     tech: ["React", "TypeScript", "Tailwind"],
     image: hasadImg,
     borderColor: "border-blue-500/30",
-    link: "https://hasadalyoum.com/",
+    link: "https://www.hasad-alyoum.com/",
   },
   {
     title: "متجر إلكتروني متكامل",
@@ -54,12 +54,13 @@ const projects = [
     borderColor: "border-purple-500/30",
   },
   {
-    title: "منصة تعليمية",
-    category: "تطبيقات ويب",
-    description: "منصة تعليمية تفاعلية مع نظام إدارة محتوى متقدم",
-    tech: ["React", "Node.js", "MongoDB"],
+    title: "منصة الناصر القانونية",
+    category: "تعليم قانوني",
+    description: "منصة تعليم قانوني تضم مكتبة قانونية وبنك أسئلة تفاعلي، مبنية بالكامل بواجهة React وقاعدة بيانات Supabase",
+    tech: ["React", "TypeScript", "Supabase"],
     image: educationalImg,
     borderColor: "border-amber-500/30",
+    link: "https://alnaseer.org/",
   },
   {
     title: "بوابة أخبار",
@@ -94,7 +95,7 @@ const PortfolioSection = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
             معرض الأعمال
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-plex text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             مشاريع تتحدث عن نفسها
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
