@@ -30,8 +30,7 @@ const HeroSection = () => {
 
         {/* Subheading */}
         <p className="text-base md:text-lg lg:text-xl text-center text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-up-delay-2 leading-relaxed">
-          الناصر تِك تصمم وتبني وتنشر منصتك — من الواجهة إلى قاعدة البيانات — باستخدام
-          <span className="text-primary-foreground font-semibold"> React وTypeScript وSupabase</span>،
+          الناصر تِك تصمم وتبني وتنشر منصتك — من الواجهة إلى قاعدة البيانات — بأدوات هندسية حديثة وموثوقة،
           مع متابعة بعد الإطلاق وليس فقط تسليم ملفات.
         </p>
 
@@ -46,20 +45,20 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* Tech Stack — stated plainly, not as a badge wall */}
+        {/* Value props — stated plainly, not as a tech-name badge wall */}
         <div className="mt-20 pt-8 border-t border-primary-foreground/10 animate-fade-up-delay-3">
           <div className="flex items-center justify-center gap-10 flex-wrap text-muted-foreground/70">
             <div className="flex items-center gap-2">
               <Code2 className="w-4 h-4" />
-              <span className="text-sm">React · TypeScript</span>
+              <span className="text-sm">أداء عالي وتحميل سريع</span>
             </div>
             <div className="flex items-center gap-2">
               <Database className="w-4 h-4" />
-              <span className="text-sm">Supabase</span>
+              <span className="text-sm">بنية بيانات آمنة ومنظّمة</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4" />
-              <span className="text-sm">نشر ومتابعة عبر Vercel</span>
+              <span className="text-sm">نشر ومتابعة مستمرة</span>
             </div>
           </div>
         </div>
