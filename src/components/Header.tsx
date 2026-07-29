@@ -19,6 +19,7 @@ const Header = () => {
     { label: "لماذا نحن", href: "#why-us" },
     { label: "خدماتنا", href: "#services" },
     { label: "أعمالنا", href: "#portfolio" },
+    { label: "الأسعار", href: "#pricing" },
     { label: "الأسئلة الشائعة", href: "#faq" },
     { label: "تواصل معنا", href: "#contact" },
   ];
