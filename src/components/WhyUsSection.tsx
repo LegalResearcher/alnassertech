@@ -57,21 +57,22 @@ const WhyUsSection = () => {
               className="group relative p-8 rounded-2xl bg-card border border-border/50 card-elevated hover:border-primary/30"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Icon */}
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                <feature.icon className="w-7 h-7 text-primary" />
+              {/* Number */}
+              <span className="font-plex block text-4xl font-bold text-primary/25 mb-4 group-hover:text-primary/40 transition-colors duration-300">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
+              {/* Icon + Title */}
+              <div className="flex items-center gap-3 mb-3">
+                <feature.icon className="w-6 h-6 text-primary" />
+                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                  {feature.title}
+                </h3>
               </div>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                {feature.title}
-              </h3>
               <p className="text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
-
-              {/* Hover Glow */}
-              <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
             </div>
           ))}
         </div>
