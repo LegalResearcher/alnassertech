@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com", label: "فيسبوك" },
-    { icon: Twitter, href: "https://x.com/Alnasr2024", label: "تويتر" },
-    { icon: Instagram, href: "https://instagram.com", label: "انستغرام" },
+    { icon: Facebook, href: "https://www.facebook.com/share/1HSc34z1Fy/", label: "فيسبوك" },
+    { icon: Twitter, href: "https://x.com/alnasser_tech", label: "تويتر" },
+    { icon: Instagram, href: "https://www.instagram.com/al_nasser_tech", label: "انستغرام" },
     { icon: Send, href: "https://t.me/+967772762090", label: "تليجرام" },
   ];
 
