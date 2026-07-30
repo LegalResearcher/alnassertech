@@ -1,14 +1,13 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import ecommerceImg from "@/assets/portfolio/ecommerce-store.jpg";
-import consultingImg from "@/assets/portfolio/consulting-website.jpg";
-import landingImg from "@/assets/portfolio/landing-page.jpg";
 import educationalImg from "@/assets/portfolio/educational-platform.jpg";
-import newsImg from "@/assets/portfolio/news-portal.jpg";
-import bookingImg from "@/assets/portfolio/booking-system.jpg";
 import hakimImg from "@/assets/portfolio/hakim-alsharabi.jpg";
 import hasadImg from "@/assets/portfolio/hasad-alyoum.jpg";
+import daftarImg from "@/assets/portfolio/daftar-alhisabat.jpg";
+import tamwinatImg from "@/assets/portfolio/tamwinat-alhay.jpg";
+import enasImg from "@/assets/portfolio/enas-clinic.jpg";
+import perfumesImg from "@/assets/portfolio/perfumes-incense.jpg";
 
 const projects = [
   {
@@ -30,30 +29,6 @@ const projects = [
     link: "https://www.hasad-alyoum.com/",
   },
   {
-    title: "متجر إلكتروني متكامل",
-    category: "متاجر إلكترونية",
-    description: "متجر إلكتروني احترافي مع نظام دفع متكامل وإدارة مخزون ذكية",
-    tech: ["دفع إلكتروني", "إدارة مخزون", "متجاوب بالكامل"],
-    image: ecommerceImg,
-    borderColor: "border-emerald-500/30",
-  },
-  {
-    title: "موقع شركة استشارات",
-    category: "مواقع الشركات",
-    description: "موقع عصري لشركة استشارات مالية مع تصميم راقي وأداء فائق",
-    tech: ["تصميم راقٍ", "حركة سلسة", "أداء عالي"],
-    image: consultingImg,
-    borderColor: "border-blue-500/30",
-  },
-  {
-    title: "صفحة هبوط تسويقية",
-    category: "صفحات الهبوط",
-    description: "صفحة هبوط عالية التحويل لحملة تسويقية ناجحة",
-    tech: ["تحسين التحويل", "تحسين محركات البحث", "أداء عالي"],
-    image: landingImg,
-    borderColor: "border-purple-500/30",
-  },
-  {
     title: "منصة الناصر القانونية",
     category: "تعليم قانوني",
     description: "منصة تعليم قانوني تضم مكتبة قانونية وبنك أسئلة تفاعلي، مبنية بالكامل بأدوات هندسية حديثة",
@@ -63,20 +38,36 @@ const projects = [
     link: "https://alnaseer.org/",
   },
   {
-    title: "بوابة أخبار",
-    category: "مواقع المحتوى",
-    description: "بوابة إخبارية سريعة مع تصنيفات متعددة وتجربة قراءة مميزة",
-    tech: ["تصنيفات متعددة", "تحسين محركات البحث", "أداء عالي"],
-    image: newsImg,
-    borderColor: "border-rose-500/30",
+    title: "تموينات الحي الراقي",
+    category: "متاجر إلكترونية",
+    description: "نظام إدارة حسابات زبائن ومتجر تموينات مع إمكانية الطلب كزائر دون تسجيل",
+    tech: ["إدارة حسابات", "طلب كزائر", "متجاوب بالكامل"],
+    image: tamwinatImg,
+    borderColor: "border-orange-500/30",
   },
   {
-    title: "نظام حجوزات",
+    title: "دفتر الحسابات المطوّر",
     category: "تطبيقات ويب",
-    description: "نظام حجوزات متكامل لعيادة طبية مع إشعارات وتقويم ذكي",
-    tech: ["تقويم ذكي", "إشعارات فورية", "ربط أنظمة خارجية"],
-    image: bookingImg,
-    borderColor: "border-cyan-500/30",
+    description: "تطبيق ويب لإدارة حسابات المحلات التجارية بسهولة، مع مزامنة فورية بين الأجهزة",
+    tech: ["مزامنة فورية", "قاعدة بيانات", "متعدد المستخدمين"],
+    image: daftarImg,
+    borderColor: "border-blue-500/30",
+  },
+  {
+    title: "ENAS Clinic",
+    category: "مواقع طبية",
+    description: "موقع حجز مواعيد لعيادة أسنان، بتصميم فاخر يعكس هوية العيادة ويسهّل حجز الكشف",
+    tech: ["حجز مواعيد", "تصميم فاخر", "متجاوب بالكامل"],
+    image: enasImg,
+    borderColor: "border-amber-500/30",
+  },
+  {
+    title: "متجر عطور وبخور",
+    category: "متاجر إلكترونية",
+    description: "متجر إلكتروني لبيع العطور والبخور اليمنية الأصيلة، مع توصيل لجميع المحافظات",
+    tech: ["سلة مشتريات", "توصيل", "متجاوب بالكامل"],
+    image: perfumesImg,
+    borderColor: "border-rose-500/30",
   },
 ];
 
