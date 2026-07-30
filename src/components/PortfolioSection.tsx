@@ -1,7 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import educationalImg from "@/assets/portfolio/educational-platform.jpg";
+import educationalImg from "@/assets/portfolio/alnaseer-platform.jpg";
 import hakimImg from "@/assets/portfolio/hakim-alsharabi.jpg";
 import hasadImg from "@/assets/portfolio/hasad-alyoum.jpg";
 import daftarImg from "@/assets/portfolio/daftar-alhisabat.jpg";
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "منصة الناصر القانونية",
     category: "تعليم قانوني",
-    description: "منصة تعليم قانوني تضم مكتبة قانونية وبنك أسئلة تفاعلي، مبنية بالكامل بأدوات هندسية حديثة",
+    description: "منصة الباحث القانوني — مكتبة قانونية موثّقة تضم أكثر من 27,300 سؤال، وتجاوزت 60,000 زيارة موثقة منذ الإطلاق",
     tech: ["مكتبة بيانات", "بحث تفاعلي", "أمان بيانات"],
     image: educationalImg,
     borderColor: "border-amber-500/30",
@@ -107,7 +107,7 @@ const PortfolioSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
